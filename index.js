@@ -6,6 +6,7 @@ const PORT = 3000;
 // Middleware to parse JSON requests
 app.use(express.json());
 app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 
 // Basic route
 app.get('/', (req, res) => {
